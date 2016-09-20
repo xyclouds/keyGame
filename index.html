@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/animate.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		window.onload=function  () {
+			var games=new Game()
+			games.play()
+		}		
+	</script>
+</head>
+<body>
+	<div class="back">
+		<img src="images/back01.jpg"  id='back'>
+		<div class="startbox">
+			<div id="start"></div>
+			<div id="aboutgame"></div>
+		</div>
+		<div class="gamecontent">
+			   <span class="closespans"></span>
+			   <img src="images/aboutgame2.png"  width="420"  id="aboutgames">
+		</div>
+		<div class="ongame">
+			<img src="images/stop.png" id="stop">
+			<div class="continue stop1"></div>
+			<div class="continue stop2"></div>
+			<div class="alertright stop3"></div>
+		</div>
+		<ul class="box">
+			<img src="images/score.png" width="250"  id="right">
+				<li id="score1"><span id="score">0</span></li>
+				<li id="score2"><span id="currscore">0</span></li>
+				<li id="lifetitle"><span id="life">5</span></li>		
+				<li id="steptitle"><span id="step">1</span></li>			
+		</ul>
+		<div id="alertbox">
+			<img src="images/end.png"  width="500" id="ends">
+			<div class="alerttop"></div>
+			<span class="alertleft"></span>
+			<span class="alertright"></span>
+		</div>
+		<div id="newalertbox">
+			<img src="images/sucsess.png"  width="500" id="sucsess">
+			<div class="alerttop"></div>
+			<span class="newcontend"></span>
+			<span class="alertright"></span>
+		</div>
+	</div>
+</body>
+</html>
